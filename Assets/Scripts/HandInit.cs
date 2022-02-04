@@ -11,12 +11,12 @@ public class HandInit : MonoBehaviour
     private GameObject instance;
     private Animator animator;
     private bool found = false;
-    // Start is called before the first frame update
-    void Start()
-    {
+    private List<InputDevice> devices;
+    void Start() {
         Debug.Log("Hand init starts");
         instance = Instantiate(handPrefab, transform);
         animator = instance.GetComponent<Animator>();
+        devices = new List<InputDevice>();
     }
 
     void UpdateHandState(InputDevice device){
@@ -33,10 +33,7 @@ public class HandInit : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        List<InputDevice> devices = new List<InputDevice>();
+    void Update() {      
         InputDevices.GetDevicesWithCharacteristics(characteristics, devices);
         
         if(devices.Count > 0){
