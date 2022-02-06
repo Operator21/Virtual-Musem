@@ -13,8 +13,8 @@ public class TeleportControl : MonoBehaviour
     public UnityEvent onTeleportCancel;
 
     void Start() {
-        teleportActivation.action.performed += TeleportModeActivate;    
-        teleportActivation.action.canceled += TeleportModeCancel;    
+        teleportActivation.action.performed += TeleportModeActivate;
+        teleportActivation.action.canceled += TeleportModeCancel;
     }
 
     void TeleportModeActivate(InputAction.CallbackContext obj){
