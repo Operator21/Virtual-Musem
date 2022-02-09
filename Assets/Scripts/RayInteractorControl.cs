@@ -9,20 +9,19 @@ public class RayInteractorControl : MonoBehaviour
     public InputActionReference rayActivation;
     public UnityEvent onRayActivate;
     public UnityEvent onRayCancel;
-    void start() {
-        rayActivation.action.performed += RayModeActivate;       
-        rayActivation.action.canceled += RayModeCancel;       
+    void OnEnable() {
+        rayActivation.action.performed += RayModeActivate;             
     }
 
     void RayModeActivate(InputAction.CallbackContext obj) {
-        Debug.Log("Activate Ray");
         onRayActivate.Invoke();
-        //rayActivation.action.performed += RayModeCancel;
+        rayActivation.action.performed -= RayModeActivate; 
+        rayActivation.action.performed += RayModeCancel;
     }
     void RayModeCancel(InputAction.CallbackContext obj) {
-        Debug.Log("Deactivate Ray");
-        //onRayCancel.Invoke();
-        //rayActivation.action.performed += RayModeActivate;
+        onRayCancel.Invoke();
+        rayActivation.action.performed -= RayModeCancel;
+        rayActivation.action.performed += RayModeActivate; 
     }
 
 }

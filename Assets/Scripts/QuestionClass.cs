@@ -37,6 +37,12 @@ public class QuestionClass
 		}
 	}
 
+	public string CorrectAnswer {
+		get {
+			return correctAnswer;
+		}
+	}
+
 	public List<string> Answers {
 		get {
 			List<string> tmp = new List<string>();
