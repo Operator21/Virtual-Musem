@@ -17,7 +17,7 @@ public class QuizClass : MonoBehaviour
     private int score = 0;
     public int buttonHeight = 35;
     public bool showInPrecentage = false;
-    private void Start() {
+    void Start() {
         questionList = new List<QuestionClass>();
         scoreText = this.transform.Find("Score").GetComponent<TextMeshProUGUI>();
         questionText = this.transform.Find("Question").GetComponent<TextMeshProUGUI>();
@@ -45,6 +45,7 @@ public class QuizClass : MonoBehaviour
                     GameObject button = CreateButton("Try Again");
                     button.GetComponent<Button>().onClick.AddListener(() => { 
                         ResetQuiz();
+                        scrollContent.transform.GetComponent<RectTransform>().sizeDelta = new Vector2(0, question.Answers.Count * buttonHeight);
                     });
                 }
             });
@@ -85,7 +86,6 @@ public class QuizClass : MonoBehaviour
 
     private string currentScore {
         get {
-            Debug.Log(questionList.Count + ", " + score);
             if(showInPrecentage){
                 if(score == 0)
                     return "Success: 0%";
