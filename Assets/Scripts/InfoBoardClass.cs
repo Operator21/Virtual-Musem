@@ -7,6 +7,7 @@ using UnityEngine.Events;
 public class InfoBoardClass : MonoBehaviour
 {
     public string headerText;
+    [TextArea(3, 10)]
     public string contentText;
     public GameObject mainObject;
     public TextMeshProUGUI headerMesh;
@@ -15,7 +16,6 @@ public class InfoBoardClass : MonoBehaviour
     [Range(0,10)]
     public float heightFromObject;
     [Space]
-    //bool active = false;
     public UnityEvent Activate;
     public UnityEvent Deactivate;
     public UnityEvent Hide;
