@@ -30,12 +30,14 @@ public class HandInit : MonoBehaviour
             //******************
             //Temporary solution to hide text when object grabbed
             //******************
+            /*
             if(gripValue > 0.1)
                 foreach(GameObject gameObject in GameObject.FindGameObjectsWithTag("Info"))
                     gameObject.GetComponent<Canvas>().enabled = false;
             else
                 foreach(GameObject gameObject in GameObject.FindGameObjectsWithTag("Info"))
                     gameObject.GetComponent<Canvas>().enabled = true;
+            */
             //******************
         } else {
             animator.SetFloat("Grip", 0);           

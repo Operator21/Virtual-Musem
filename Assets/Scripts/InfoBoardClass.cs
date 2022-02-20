@@ -24,17 +24,22 @@ public class InfoBoardClass : MonoBehaviour
     void Start(){
         headerMesh.text = headerText;
         contentMesh.text = contentText;
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = GameObject.FindGameObjectWithTag("MainCamera");
     }
     
     void Update(){
         Vector3 newPosition = mainObject.transform.position;
         newPosition.y = heightFromObject;
-        transform.SetPositionAndRotation(newPosition, new Quaternion());
-        transform.rotation = Quaternion.LookRotation(transform.position - player.transform.position);
+        transform.SetPositionAndRotation(newPosition, new Quaternion());   
+        float distance = Vector3.Distance(gameObject.transform.position, player.transform.position);  
+        if(distance > 1)
+            Show.Invoke();
+        if(distance < 0.8f)
+            Hide.Invoke();
     }
 
     private void OnTriggerEnter(Collider other) {
+        Debug.Log("Entered collision field");
         if(other.gameObject.Equals(player))
             Activate.Invoke();
     }
