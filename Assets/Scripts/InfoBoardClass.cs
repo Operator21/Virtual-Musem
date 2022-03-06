@@ -21,17 +21,20 @@ public class InfoBoardClass : MonoBehaviour
     public UnityEvent Hide;
     public UnityEvent Show;
     private GameObject player;
+    private GameObject mainCamera;
+    private float distance;
     void Start(){
         headerMesh.text = headerText;
         contentMesh.text = contentText;
         player = GameObject.FindGameObjectWithTag("Player");
+        mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
     }
     
     void Update(){
         Vector3 newPosition = mainObject.transform.position;
         newPosition.y = heightFromObject;
         transform.SetPositionAndRotation(newPosition, new Quaternion());   
-        float distance = Vector3.Distance(gameObject.transform.position, player.transform.position);  
+        distance = Vector3.Distance(gameObject.transform.position, mainCamera.transform.position);  
         if(distance > 1)
             Show.Invoke();
         if(distance < 0.8f)

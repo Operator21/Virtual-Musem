@@ -154,6 +154,17 @@ Transform:
   m_Father: {fileID: 1498362367}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &179810034 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 398735040172155936, guid: f4b659fca37dc3c488fd913f130a2514, type: 3}
+  m_PrefabInstance: {fileID: 1800667929}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &423181434
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1469,6 +1480,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 398735040172155936, guid: f4b659fca37dc3c488fd913f130a2514, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 398735040172155938, guid: f4b659fca37dc3c488fd913f130a2514, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 398735041767455587, guid: f4b659fca37dc3c488fd913f130a2514, type: 3}
       propertyPath: headerText
       value: MP 40
@@ -1491,6 +1510,50 @@ PrefabInstance:
         who designed the MP 18, although he was not involved in the design or production
         of the MP40. The weapon's other variants included the MP 40/I and the MP
         41. From 1940 to 1945, an estimated 1.1 million were produced by Erma Werke. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 398735041767455587, guid: f4b659fca37dc3c488fd913f130a2514, type: 3}
+      propertyPath: Hide.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 398735041767455587, guid: f4b659fca37dc3c488fd913f130a2514, type: 3}
+      propertyPath: Deactivate.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 398735041767455587, guid: f4b659fca37dc3c488fd913f130a2514, type: 3}
+      propertyPath: Hide.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 398735041767455587, guid: f4b659fca37dc3c488fd913f130a2514, type: 3}
+      propertyPath: Hide.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 179810034}
+    - target: {fileID: 398735041767455587, guid: f4b659fca37dc3c488fd913f130a2514, type: 3}
+      propertyPath: Hide.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 398735041767455587, guid: f4b659fca37dc3c488fd913f130a2514, type: 3}
+      propertyPath: Deactivate.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 398735041767455587, guid: f4b659fca37dc3c488fd913f130a2514, type: 3}
+      propertyPath: Hide.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 398735041767455587, guid: f4b659fca37dc3c488fd913f130a2514, type: 3}
+      propertyPath: Deactivate.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 398735041767455587, guid: f4b659fca37dc3c488fd913f130a2514, type: 3}
+      propertyPath: Hide.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.Behaviour, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 398735041767455587, guid: f4b659fca37dc3c488fd913f130a2514, type: 3}
+      propertyPath: Deactivate.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 398735041767455587, guid: f4b659fca37dc3c488fd913f130a2514, type: 3}
+      propertyPath: Hide.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 398735041767455592, guid: f4b659fca37dc3c488fd913f130a2514, type: 3}
       propertyPath: m_Name
