@@ -24,7 +24,7 @@ public class InfoBoardClass : MonoBehaviour
     void Start(){
         headerMesh.text = headerText;
         contentMesh.text = contentText;
-        player = GameObject.FindGameObjectWithTag("MainCamera");
+        player = GameObject.FindGameObjectWithTag("Player");
     }
     
     void Update(){
@@ -39,12 +39,13 @@ public class InfoBoardClass : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        Debug.Log("Entered collision field");
+        //Debug.Log("Entered collision field");
         if(other.gameObject.Equals(player))
             Activate.Invoke();
     }
 
     private void OnTriggerExit(Collider other) {
+        //Debug.Log("Left collision field");
         if(other.gameObject.Equals(player))
             Deactivate.Invoke();
     }
