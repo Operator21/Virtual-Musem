@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class QuizClass : MonoBehaviour
 {
     public GameObject buttonPrefab;
+    [TextArea(1,5)]
     public List<string> questions;
     private List<QuestionClass> questionList;
     private TextMeshProUGUI questionText;
@@ -21,7 +22,7 @@ public class QuizClass : MonoBehaviour
         questionList = new List<QuestionClass>();
         scoreText = this.transform.Find("Score").GetComponent<TextMeshProUGUI>();
         questionText = this.transform.Find("Question").GetComponent<TextMeshProUGUI>();
-        scrollContent = this.transform.Find("Scroll View/Viewport/Content");
+        scrollContent = this.transform.Find("Content");
 
         foreach(string questionStructure in questions){
             questionList.Add(new QuestionClass(questionStructure));
@@ -33,6 +34,7 @@ public class QuizClass : MonoBehaviour
         questionText.text = question.Question;       
         posCurrent = 0;       
         ClearContent();
+        //scrollContent.transform.GetComponent<RectTransform>().sizeDelta = new Vector2(220, question.Answers.Count * buttonHeight);
         foreach(string answer in question.Answers) {
             GameObject instance = CreateButton(answer);
             instance.GetComponent<Button>().onClick.AddListener(() => {
@@ -43,14 +45,14 @@ public class QuizClass : MonoBehaviour
                     posCurrent = 0;
                     ClearContent();
                     GameObject button = CreateButton("Try Again");
+                    //scrollContent.transform.GetComponent<RectTransform>().sizeDelta = new Vector2(220, buttonHeight);
                     button.GetComponent<Button>().onClick.AddListener(() => { 
                         ResetQuiz();
-                        scrollContent.transform.GetComponent<RectTransform>().sizeDelta = new Vector2(0, question.Answers.Count * buttonHeight);
+                        //scrollContent.transform.GetComponent<RectTransform>().sizeDelta = new Vector2(220, question.Answers.Count * buttonHeight);
                     });
                 }
             });
-        }
-        scrollContent.transform.GetComponent<RectTransform>().sizeDelta = new Vector2(0, question.Answers.Count * buttonHeight);
+        }        
     }
 
     public bool NextQuestion() {
@@ -64,8 +66,8 @@ public class QuizClass : MonoBehaviour
     private GameObject CreateButton(string content){
         GameObject instance = Instantiate(buttonPrefab, new Vector3(0, 0, 0), new Quaternion());
         instance.transform.SetParent(scrollContent, false);
-        instance.transform.GetComponent<RectTransform>().SetInsetAndSizeFromParentEdge(RectTransform.Edge.Top, posCurrent, buttonHeight);
-        instance.transform.GetComponent<RectTransform>().sizeDelta = new Vector2(0, buttonHeight);
+        //instance.transform.GetComponent<RectTransform>().SetInsetAndSizeFromParentEdge(RectTransform.Edge.Top, posCurrent, buttonHeight);
+        instance.transform.GetComponent<RectTransform>().sizeDelta = new Vector2(220, buttonHeight);
         posCurrent += buttonHeight;
         instance.transform.Find("Text (TMP)").GetComponent<TextMeshProUGUI>().text = content;
         return instance;
