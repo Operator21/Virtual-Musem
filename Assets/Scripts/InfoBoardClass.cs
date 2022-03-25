@@ -16,6 +16,8 @@ public class InfoBoardClass : MonoBehaviour
     [Range(0,10)]
     public float heightFromObject;
     [Space]
+    [Range(3,20)]
+    public float hideTextDistance = 5;
     public UnityEvent Activate;
     public UnityEvent Deactivate;
     public UnityEvent Hide;
@@ -33,23 +35,29 @@ public class InfoBoardClass : MonoBehaviour
     void Update(){
         Vector3 newPosition = mainObject.transform.position;
         newPosition.y = heightFromObject;
-        transform.SetPositionAndRotation(newPosition, new Quaternion());   
+        transform.position = newPosition;
         distance = Vector3.Distance(gameObject.transform.position, mainCamera.transform.position);  
         if(distance > 1)
             Show.Invoke();
+            if(distance > hideTextDistance)
+                Deactivate.Invoke();
+            if(distance <= hideTextDistance)
+                Activate.Invoke();
         if(distance < 0.8f)
-            Hide.Invoke();
+            Hide.Invoke();       
     }
 
-    private void OnTriggerEnter(Collider other) {
+    /*private void OnTriggerEnter(Collider other) {
         //Debug.Log("Entered collision field");
+        //Debug.Log(other.gameObject.name);
         if(other.gameObject.Equals(player))
             Activate.Invoke();
     }
 
     private void OnTriggerExit(Collider other) {
         //Debug.Log("Left collision field");
+        //Debug.Log(other.gameObject.name);
         if(other.gameObject.Equals(player))
             Deactivate.Invoke();
-    }
+    }*/
 }
