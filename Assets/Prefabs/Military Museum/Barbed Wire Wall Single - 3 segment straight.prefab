@@ -1,0 +1,222 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5161548371780433011
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8303838179303670014}
+  m_Layer: 0
+  m_Name: Barbed Wire Wall Single - 3 segment straight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8303838179303670014
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5161548371780433011}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.57, y: 0, z: 23.21}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4065696885756087}
+  - {fileID: 5482056334677792257}
+  - {fileID: 354360955758809312}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &638521551014757289
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8303838179303670014}
+    m_Modifications:
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.6099997
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.030000687
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5729570948759981842, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_Name
+      value: Barbed Wire - Single (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+--- !u!4 &5482056334677792257 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+  m_PrefabInstance: {fileID: 638521551014757289}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4621440534153086280
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8303838179303670014}
+    m_Modifications:
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5729570948759981842, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_Name
+      value: Barbed Wire - Single (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+--- !u!4 &354360955758809312 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+  m_PrefabInstance: {fileID: 4621440534153086280}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4955691860278314271
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8303838179303670014}
+    m_Modifications:
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5729570948759981842, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+      propertyPath: m_Name
+      value: Barbed Wire - Single
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+--- !u!4 &4065696885756087 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4956306803803346344, guid: 8687b8e76893f4f44ac49f4272bb6ecc, type: 3}
+  m_PrefabInstance: {fileID: 4955691860278314271}
+  m_PrefabAsset: {fileID: 0}
