@@ -2726,7 +2726,7 @@ GameObject:
   - component: {fileID: 8731388699773665322}
   - component: {fileID: 841236616369983598}
   m_Layer: 0
-  m_Name: XR Camera Rig - outdated
+  m_Name: XR Camera Rig - Legacy
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
