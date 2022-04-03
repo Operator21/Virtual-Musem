@@ -89,7 +89,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &7095148862994308456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,6 +127,7 @@ MonoBehaviour:
   indicatorMesh: {fileID: 7095148863685403493}
   heightFromObject: 1.35
   hideTextDistance: 5
+  indicatorColor: {r: 0, g: 1, b: 0.06666667, a: 1}
   Activate:
     m_PersistentCalls:
       m_Calls:

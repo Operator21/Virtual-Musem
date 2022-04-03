@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 7644796642065867158}
   - component: {fileID: 2634652854705134513}
   - component: {fileID: 4130449871061713450}
+  - component: {fileID: 2526934640760505596}
   m_Layer: 0
   m_Name: Turret
   m_TagString: Untagged
@@ -118,6 +119,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2526934640760505596
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653726734390586543}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.1970363, y: 1.1338522, z: 3.4434552}
+  m_Center: {x: -0.0027405228, y: 0.015521892, z: 0.1834031}
 --- !u!1 &784215076594165425
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,6 +808,8 @@ GameObject:
   - component: {fileID: 7862976500061990080}
   - component: {fileID: 365517915470101269}
   - component: {fileID: 1992221011595564186}
+  - component: {fileID: 9069769051403246349}
+  - component: {fileID: 3339333780093011985}
   m_Layer: 0
   m_Name: Hull
   m_TagString: Untagged
@@ -872,6 +888,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &9069769051403246349
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7851758034298407222}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.8610926, y: 3.7097216, z: 13.614058}
+  m_Center: {x: -0.010622729, y: -0.36045477, z: 3.7812471}
+--- !u!65 &3339333780093011985
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7851758034298407222}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.8610926, y: 0.9129238, z: 11.928858}
+  m_Center: {x: -0.010622729, y: 1.6399667, z: 3.3938801}
 --- !u!1 &9191044208335878217
 GameObject:
   m_ObjectHideFlags: 0

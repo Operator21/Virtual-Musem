@@ -18,6 +18,8 @@ public class InfoBoardClass : MonoBehaviour
     [Space]
     [Range(3,20)]
     public float hideTextDistance = 5;
+    public Color indicatorColor = new Color(0, 255, 17);
+    [Space]
     public UnityEvent Activate;
     public UnityEvent Deactivate;
     public UnityEvent Hide;
@@ -25,11 +27,13 @@ public class InfoBoardClass : MonoBehaviour
     private GameObject player;
     private GameObject mainCamera;
     private float distance;
+    
     void Start(){
         headerMesh.text = headerText;
         contentMesh.text = contentText;
         player = GameObject.FindGameObjectWithTag("Player");
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+        transform.Find("Indicator").GetComponent<TextMeshProUGUI>().color = indicatorColor;
     }
     
     void Update(){
