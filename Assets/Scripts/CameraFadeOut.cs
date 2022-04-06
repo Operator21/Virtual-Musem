@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class CameraFadeOut : MonoBehaviour
 {
@@ -10,19 +11,15 @@ public class CameraFadeOut : MonoBehaviour
     public Material faderMaterial;
     int delay = 5;
     int step = 5;
-    void Start()
-    {
-        Debug.Log("Start camera collision detection");
+    void Start() {
         fader = transform.Find("Fader").gameObject;
-        //faderMaterial = fader.GetComponent<Material>();
     }
 
     private void OnCollisionEnter(Collision other) {
-        if(!collision) {
+        if(!collision && other.gameObject.GetComponent<XRGrabInteractable>() == null) {
             collision = true;   
             Fadein();        
         }
-        //Debug.Log(other.gameObject.name);
     }
 
     private void OnCollisionExit(Collision other) {
@@ -40,7 +37,6 @@ public class CameraFadeOut : MonoBehaviour
             await Task.Delay(delay);
         }
         await Task.Delay(delay);
-        //fader.SetActive(true);
         faderMaterial.color = new Color(0, 0, 0, 1);
     }
     async void Fadeout() {

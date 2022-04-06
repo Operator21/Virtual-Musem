@@ -91,7 +91,7 @@ public class QuizClass : MonoBehaviour
             if(showInPrecentage){
                 if(score == 0)
                     return "Success: 0%";
-                return "Success: " + (score/(questionList.Count/100.0)) + "%";
+                return "Success: " + (score/(questionList.Count/100.0)).ToString("0.00") + "%";
             }
             return score + "/" + questionList.Count;
         }
