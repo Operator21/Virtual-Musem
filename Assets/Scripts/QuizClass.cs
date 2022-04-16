@@ -41,10 +41,10 @@ public class QuizClass : MonoBehaviour
                 if(instance.transform.Find("Text (TMP)").GetComponent<TextMeshProUGUI>().text == questionList[currentQuestion].CorrectAnswer)
                     score+=1;
                 if(!NextQuestion()){
-                    questionText.text = "Quiz finished";
+                    questionText.text = "Kvíz dokončen";
                     posCurrent = 0;
                     ClearContent();
-                    GameObject button = CreateButton("Try Again");
+                    GameObject button = CreateButton("Zkusit znovu");
                     //answerContent.transform.GetComponent<RectTransform>().sizeDelta = new Vector2(220, buttonHeight);
                     button.GetComponent<Button>().onClick.AddListener(() => { 
                         ResetQuiz();
@@ -90,8 +90,8 @@ public class QuizClass : MonoBehaviour
         get {
             if(showInPrecentage){
                 if(score == 0)
-                    return "Success: 0%";
-                return "Success: " + (score/(questionList.Count/100.0)).ToString("0.00") + "%";
+                    return "Úspěšnost: 0%";
+                return "Úspěšnost: " + (score/(questionList.Count/100.0)).ToString("0.00") + "%";
             }
             return score + "/" + questionList.Count;
         }

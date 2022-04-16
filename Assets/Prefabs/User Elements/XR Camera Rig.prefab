@@ -1758,7 +1758,7 @@ GameObject:
   - component: {fileID: 7216903460339036493}
   - component: {fileID: 8122701030493366534}
   m_Layer: 0
-  m_Name: XR Camera Rig - Basic
+  m_Name: XR Camera Rig
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
